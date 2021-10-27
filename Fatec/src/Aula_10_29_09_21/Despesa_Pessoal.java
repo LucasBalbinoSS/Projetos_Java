@@ -70,6 +70,17 @@ public class Despesa_Pessoal {
         System.out.println("Total: " + this.getTotal());
     }
 
+    public void imprime(int mes, int ano) {
+        System.out.println("-----------------------------------------------------------------------------------");
+        System.out.println("DESPESAS (" + mes + "/" + ano + ") - CPF: " + this.getCpf());
+        System.out.println("-----------------------------------------------------------------------------------");
+        for (Despesa despesa: this.getDespesas()) {
+            System.out.println(despesa.getData() + " - " + despesa.getDesc_despesa() + " : " + despesa.getValor());
+        }
+        System.out.println("-----------------------------------------------------------------------------------");
+        System.out.println("Total: " + this.getTotal(mes, ano));
+    }
+
     // ToString
     @Override
     public String toString() {
