@@ -35,6 +35,7 @@ public class Controle_Despesa {
                 +   "6 - Imprimir despesas mês/ano\n"
                 +   "7 - Imprimir despesas dia/mês/ano\n"
                 +   "8 - Sair";
+
         do {
             System.out.println(menu);
 
