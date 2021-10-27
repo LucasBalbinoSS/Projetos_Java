@@ -1,5 +1,6 @@
 package Aula_10_29_09_21;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Despesa_Pessoal {
@@ -40,10 +41,20 @@ public class Despesa_Pessoal {
         return total;
     }
 
-    public double getTotal(int mes, int ano) {
+    public double getTotal(int mes, int ano) {  // Sobrecarga de um método //
         double total = 0;
         for (Despesa despesa: this.getDespesas()) {
+            if (despesa.getData().getMonthValue() == mes && despesa.getData().getYear() == ano)
             total += despesa.getValor();
+        }
+        return total;
+    }
+
+    public double getTotal(LocalDate data) {
+        double total = 0;
+        for (Despesa despesa: this.getDespesas()) {
+            if (despesa.getData().equals(data))
+                total += despesa.getValor();
         }
         return total;
     }
