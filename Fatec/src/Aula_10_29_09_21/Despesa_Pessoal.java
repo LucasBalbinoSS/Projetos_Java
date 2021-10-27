@@ -59,6 +59,17 @@ public class Despesa_Pessoal {
         return total;
     }
 
+    public void imprime() {
+        System.out.println("-----------------------------------------------------------------------------------");
+        System.out.println("DESPESAS");
+        System.out.println("-----------------------------------------------------------------------------------");
+        for (Despesa despesa: this.getDespesas()) {
+            System.out.println(despesa.getData() + " - " + despesa.getDesc_despesa() + " : " + despesa.getValor());
+        }
+        System.out.println("-----------------------------------------------------------------------------------");
+        System.out.println("Total: " + this.getTotal());
+    }
+
     // ToString
     @Override
     public String toString() {

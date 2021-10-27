@@ -26,5 +26,9 @@ public class Main {
         System.out.println("Total despesas 09/2021: " + dp01.getTotal(LocalDate.of(2021, 3, 30)));
         System.out.println("Total despesas 09/2021: " + dp01.getTotal(LocalDate.of(2021, 5, 4)));
 
+        System.out.println();
+
+        dp01.imprime();
+
     }
 }
