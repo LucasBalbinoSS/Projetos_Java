@@ -61,7 +61,7 @@ public class Despesa_Pessoal {
 
     public void imprime() {
         System.out.println("-----------------------------------------------------------------------------------");
-        System.out.println("DESPESAS");
+        System.out.println("DESPESAS (TOTAL) - CPF: " + this.getCpf());
         System.out.println("-----------------------------------------------------------------------------------");
         for (Despesa despesa: this.getDespesas()) {
             System.out.println(despesa.getData() + " - " + despesa.getDesc_despesa() + " : " + despesa.getValor());
