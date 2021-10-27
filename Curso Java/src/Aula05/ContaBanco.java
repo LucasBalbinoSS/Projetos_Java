@@ -1,11 +1,11 @@
 package Aula05;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class ContaBanco {
 
     // Entrada de dados pelo input do usuário //
-    Scanner input = new Scanner(System.in);
+    //Scanner input = new Scanner(System.in);
 
     // Atributos //
     public String num_conta;
@@ -19,8 +19,8 @@ public class ContaBanco {
         return this.num_conta;
     }
 
-    public void setNum_conta() {
-        this.num_conta = input.next();
+    public void setNum_conta(String nc) {
+        this.num_conta = nc;
     }
 
     public String getTipo() {
@@ -28,7 +28,9 @@ public class ContaBanco {
     }
 
     public void setTipo(String t) {
-        this.tipo = t;
+        while (t = ! ("CC") {
+            System.out.println();
+        }
     }
 
     public String getDono() {
