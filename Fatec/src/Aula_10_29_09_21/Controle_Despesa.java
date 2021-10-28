@@ -38,8 +38,9 @@ public class Controle_Despesa {
 
         do {
             System.out.println(menu);
+            System.out.println();
 
-            System.out.print("Opção: ");
+            System.out.print("Escolha uma das opções: ");
             opcao = sc.nextInt();
         } while (opcao != 8);
         sc.close();
