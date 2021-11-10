@@ -1,62 +1,45 @@
 package Aula05;
 
-//import java.util.Scanner;
-
 public class ContaBanco {
 
-    // Entrada de dados pelo input do usuário //
-    //Scanner input = new Scanner(System.in);
-
     // Atributos //
-    public String num_conta;
-    protected String tipo;
-    private String dono;
-    private float saldo;
-    private boolean status;
+   public String num_conta;
+   protected String tipo;
+   private String dono;
+   private float saldo;
+   private boolean status;
 
-    // Getters & Setters //
+   // Getters & Setters //
     public String getNum_conta() {
-        return this.num_conta;
+        return num_conta;
     }
 
     public void setNum_conta(String nc) {
-        this.num_conta = nc;
+        nc = this.num_conta;
     }
 
     public String getTipo() {
-        return this.tipo;
+        return tipo;
     }
 
     public void setTipo(String t) {
-        while (t = ! ("CC") {
-            System.out.println();
-        }
+        t = this.tipo;
     }
 
     public String getDono() {
-        return this.dono;
+        return dono;
     }
 
     public void setDono(String d) {
-        this.dono = d;
+        d = this.dono;
     }
 
     public float getSaldo() {
-        return this.saldo;
+        return saldo;
     }
 
     public void setSaldo(float s) {
-        this.saldo = s;
+        s = this.saldo;
     }
-
-    public boolean isStatus() {
-        return status;
-    }
-
-    public void setStatus(boolean s) {
-        this.status = s;
-    }
-
-    // Métodos //
 
 }
