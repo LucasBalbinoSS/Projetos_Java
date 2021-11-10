@@ -9,6 +9,24 @@ public class ContaBanco {
    private float saldo;
    private boolean status;
 
+   // Construtor //
+
+    public ContaBanco() {
+
+    }
+
+    public ContaBanco(String num_conta, String tipo,
+                      String dono, float saldo,
+                      boolean status)
+    {
+        this.num_conta = num_conta;
+        this.tipo = tipo;
+        this.dono = dono;
+        this.saldo = saldo;
+        this.status = status;
+
+    }
+
    // Getters & Setters //
     public String getNum_conta() {
         return num_conta;
@@ -40,6 +58,19 @@ public class ContaBanco {
 
     public void setSaldo(float s) {
         s = this.saldo;
+    }
+
+    public boolean getStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean sts) {
+        sts = this.status;
+    }
+
+    // Outros métodos //
+    public void abrir_conta() {
+        setStatus(true);
     }
 
 }
